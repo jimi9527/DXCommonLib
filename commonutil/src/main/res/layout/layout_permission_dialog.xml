@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_black"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_rect_white"
+        android:gravity="center_horizontal"
+        android:minHeight="@dimen/px212"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/px50">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="获取拍照权限"
+            android:textColor="@color/black_191a1b"
+            android:textSize="@dimen/pxsp30" />
+
+        <ImageView
+            android:id="@+id/iv_permission_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px46"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px30"
+            android:layout_marginRight="@dimen/px30"
+            android:layout_marginTop="@dimen/px19"
+            android:maxLines="2"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black_191a1b"
+            android:textSize="@dimen/pxsp25" />
+
+
+        <ImageView
+            style="@style/line_style"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/px42_7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px87"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="暂不"
+                android:textColor="@color/black_191a1b"
+                android:textSize="@dimen/pxsp27" />
+
+            <ImageView
+                android:id="@+id/iv_line"
+                style="@style/line_style"
+                android:layout_width="@dimen/px1"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="授权"
+                android:textColor="@color/red_c03131"
+                android:textSize="@dimen/pxsp27" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
